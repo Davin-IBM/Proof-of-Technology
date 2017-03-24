@@ -10,11 +10,11 @@
 
 2.  Click the signup button on the top right
 
-> <img src="https://raw.githubusercontent.com/scholarsmate/ibm-pot/master/images/DSX%20Sign%20Up.png" width="624" height="300">
+> <img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/DSX/master/images/DSX%20Sign%20Up.png" width="624" height="300">
 
 3. Enter your email and press continue. Note: If you have a Bluemix account you can click continue with Bluemix credentials, otherwise click create your Bluemix account and enter your email.
 
-> <img src="https://raw.githubusercontent.com/scholarsmate/ibm-pot/master/images/Enter%20Email.png" width="624" height="300">
+> <img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/DSX/master/images/Enter%20Email.png" width="624" height="300">
 
 4. You should get an email from "ibmacct" with your IBMid Confirmation code
 
@@ -22,7 +22,7 @@
 
 5. Then, on the next page fill in the corresponding fields and click CREATE ACCOUNT
 
- > <img src="https://raw.githubusercontent.com/scholarsmate/ibm-pot/master/images/Enter.png" width="624" height="300"/>
+ > <img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/DSX/master/images/Enter.png" width="624" height="300"/>
 
 6. In the new page, write your email and click CONTINUE
 
@@ -59,7 +59,7 @@
 
  1. Download Repository from github https://github.com/IBMDataScience/WOW2016 to local directory.
  
- >  <img src="https://raw.githubusercontent.com/scholarsmate/ibm-pot/master/images/Zip.png"/>
+ >  <img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/DSX/master/images/Zip.png"/>
  
  2. Unzip repo zip files locally.
 
