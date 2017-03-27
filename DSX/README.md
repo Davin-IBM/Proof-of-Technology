@@ -2,7 +2,7 @@
 
 # Instructions:
 
-# Step 1. Get on IBM Data Science Experience (DSX).
+# Step 1. Get on IBM Data Science Experience (DSX).   We recommend using the Firefox brower.
 
 ## Create an account.
 
@@ -12,11 +12,11 @@
 
 > <img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/DSX%20Sign%20Up.png" width="624" height="300">
 
-3. Enter your email and press continue. Note: If you have a Bluemix account you can click continue with Bluemix credentials, otherwise click create your Bluemix account and enter your email.
+3. Enter your email and press Continue. Note: If you already have an IBM id you can click Sign in with your IBM id -- if you don't have a DSX account one will be created for you.
 
 > <img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/Enter%20Email.png" width="624" height="300">
 
-4. You should get an email from "ibmacct" with your IBMid Confirmation code
+4. You should get an email from "ibmacct@us.ibm.com" with your IBMid Confirmation code
 
  >  <img src="https://github.com/IBMDataScience/wow-lab-to-production/blob/master/images/confirmation-code.png?raw=true" width="624" height="300">
 
