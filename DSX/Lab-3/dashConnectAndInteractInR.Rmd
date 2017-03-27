@@ -119,5 +119,5 @@ qplot(PREDICTED_VETTING, data = predicted, geom = 'bar', log = 'y')
 Close the database connection.
 
 ```{r}
-#idaClose(conn)
+idaClose(conn)
 ```
