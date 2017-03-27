@@ -54,32 +54,3 @@
 
  >  <img src="https://github.com/IBMDataScience/wow-lab-to-production/blob/master/images/create-project.png?raw=true" width="512" height="499" />
 
-# Step 3. Download Repository.
-## If you are at IBM Booth, then you can skip this part as the files are located on your desktop.
-
- 1. Download Repository from github https://github.com/IBMDataScience/WOW2016 to local directory.
- 
- >  <img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/Zip.png"/>
- 
- 2. Unzip repo zip files locally.
-
-# Step 4. Create a new notebook.
-
- 1.  From the your project page, on the "Overview" tab click "add notebook"
-
- 2.  Click “Add Notebook” 
- 
- >  <img src="https://github.com/IBMDataScience/WOW2016/blob/master/images/NewNotebook.png"/>
- 
- 3. Enter a notebook Name, Description and pick from File, click browse and pick VehicleAccidentLab.ipynb file downloaded. 
-
- >  <img src="https://github.com/IBMDataScience/WOW2016/blob/master/images/NBFF.png" width="512"/>
-
- 3. Click on Create Notebook
-
-# Step 5. Follow Instructions in Notebook.
-
-
-
-
-
