@@ -19,7 +19,7 @@ if(length(new.packages)) install.packages(new.packages)
 lapply(list.of.packages, function(x){library(x, character.only = TRUE, warn.conflicts = FALSE, quietly = TRUE)})
 ```
 
-Establish a connection to dashDB.  You'll need to fill in the dashDB instance's hostname, user ID (uid) and password (pwd).
+Establish a connection to dashDB.  You'll need to fill in details of your dashDB instance in the connection.R file (if you haven't done so already).
 
 ```{r}
 # Get connection details
