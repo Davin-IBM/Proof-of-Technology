@@ -2,7 +2,7 @@
 
 ## Instructions:
 
-### Step 1.  Log into your [http://datascience.ibm.com/](http://datascience.ibm.com/), click the hamburger icon in the top left and select RStudio.
+### Step 1.  Log into your [http://datascience.ibm.com/](http://datascience.ibm.com/) account, then click the hamburger icon in the top left and select RStudio.
 
 > <img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/Lab-3/images/RStudio-select.png"/>
 
@@ -43,3 +43,5 @@ After the project gets created, you'll see a screen similar to the following:
 
 ## Step 12.  In the running app, click on some of the rows in the table and vet some of the records.
 > <img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/Lab-3/images/RStudio-lab3-vet-records.png"/>
+
+As you save your vettings, they are persisted back to dashDB.  You can go back to your Lab-2 notebook and re-run the ML predictions and see the changes reflected there and in the UI.  You now have an end-to-end skeleton application that uses vetting data, dashDB, Spark and DSX that you can now flesh out into something truly useful.
