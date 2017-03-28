@@ -2,4 +2,4 @@
 
 ## Contents:
 
-1. [IBM's Data Science Experience (DSX) Proof of technology](DSX/README.md)
+1. [IBM's Data Science Experience (DSX) Proof of technology](DSX)
