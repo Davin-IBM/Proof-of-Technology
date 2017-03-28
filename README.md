@@ -1,6 +1,6 @@
 # Proof-of-Technology
 
-Proofs of technology are to determine feasible solutions to technical problems.
+Proofs of Technology (PoT) are to determine feasible solutions to technical problems.
 
 ## Contents:
 
