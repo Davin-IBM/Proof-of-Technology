@@ -6,14 +6,19 @@
 
 ### Step 1.  Log into your [DSX](http://datascience.ibm.com/) account, then click the hamburger icon in the top left and select `My Projects`, then select the project you created at the beginning of this proof of technology.
 
+> <img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/Lab-1/images/DSX-open-project.png"/>
+
 ### Step 2.  Click the `add notebooks` link in the top right of your project pane.
 
-### Step 3.  Click the `From URL` tab under `Create Notebook`.
+> <img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/Lab-1/images/DSX-add-notebook.png"/>
 
-### Step 4.  Give the notebook a name in the `Name` field, for example `Connect and Interact with dashDB` and optionally you can give it a description.
+### Step 3.  Create the notebook.
 
-### Step 5.  In the Notebook URL field, use `https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/Lab-1/dashConnectAndInteract.ipynb`.
+> <img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/Lab-1/images/DSX-create-notebook-from-url.png"/>
 
-### Step 6.  Ensure that there is a `Spark Service` selected, then click the `Create Notebook` button on the bottom right of the screen.
+1. Click the `From URL` tab under `Create Notebook`.
+1. Give the notebook a name in the `Name` field, for example `Connect and Interact with dashDB` and optionally you can give it a description.
+1. In the Notebook URL field, use `https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/Lab-1/dashConnectAndInteract.ipynb`.
+1. Ensure that there is a `Spark Service` selected, then click the `Create Notebook` button on the bottom right of the screen.
 
-### Step 7.  Follow the instructions in the notebook.
+### Step 4.  Follow the instructions in the notebook.
