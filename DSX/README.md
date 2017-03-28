@@ -7,11 +7,11 @@ Use IBM’s Data Science Experience (DSX) and BlueMix  cloud  services  to  crea
 [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/DSX.png" height="150"/>](http://datascience.ibm.com/) [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/jupyter.png" height="150"/>](http://jupyter.org/index.html) [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/spark.png" height="150"/>](http://spark.apache.org/) [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/RStudio2.png"/>](https://www.rstudio.com/) [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/shiny.png"/>](https://shiny.rstudio.com/)
 
 
-# Instructions:
+## Instructions:
 
-# Step 1. Get on IBM Data Science Experience (DSX).   We recommend using the Firefox browser.
+### Step 1. Get on IBM Data Science Experience (DSX).   We recommend using the Firefox browser.
 
-## Create an account.
+#### Create an account.
 
 1.  Go to [http://datascience.ibm.com/](http://datascience.ibm.com/)
 
@@ -45,7 +45,7 @@ Use IBM’s Data Science Experience (DSX) and BlueMix  cloud  services  to  crea
 
 >  <img src="https://github.com/IBMDataScience/wow-lab-to-production/blob/master/images/landing.png?raw=true"/>
 
-# Step 2. Create a project
+### Step 2. Create a project
 
 1. Click on the left hand side "hamburger" icon and then click on My Projects to see a list of your projects. You should only see a default project.
 
