@@ -2,6 +2,17 @@
 
 [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/DSX.png" height="150"/>](http://datascience.ibm.com/) [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/jupyter.png" height="150"/>](http://jupyter.org/index.html) [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/spark.png" height="150"/>](http://spark.apache.org/)
 
+Upon completing the lab, you will know how to:
+
+1. Read data from dashDB to run through machine learning algorithms.
+2. Prepare data for machine learning.
+3. Identify a column lable for supervised learning.
+4. Assemble and transform features for machine learning.
+5. Setup a Spark pipeline for processing.
+6. Split training and test data.
+7. Train, validate, and tune algorithms.
+8. Load trained data back to dashDB.
+
 ## Instructions:
 
 ### Step 1.  Log into your [DSX](http://datascience.ibm.com/) account, then click the hamburger icon in the top left and select `My Projects`, then select the project you created at the beginning of this proof of technology.
@@ -15,7 +26,7 @@
 
 ### Step 5.  In the Notebook URL field, use `https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/Lab-2/Categorizing-Vetted-Data.ipynb`
 
-[<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/lab2-git.png" height="150"/>
+<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/lab2-git.png" height="150"/>
 
 ### Step 6.  Ensure that there is a `Spark Service` selected, then click the `Create Notebook` button on the bottom right of the screen.
 
