@@ -22,3 +22,5 @@
 1. Ensure that there is a `Spark Service` selected, then click the `Create Notebook` button on the bottom right of the screen.
 
 ### Step 4.  Follow the instructions in the notebook.
+
+> <img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/Lab-1/images/DSX-edit-notebook-begin.png"/>
