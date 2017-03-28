@@ -1,10 +1,26 @@
 # IBM Proof of Technology - Data Science Experience
 
-# Instructions:
+## Description:
 
-# Step 1. Get on IBM Data Science Experience (DSX).   We recommend using the Firefox browser.
+[<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/DSX.png" height="150"/>](http://datascience.ibm.com/) [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/bluemix-logo.png" height="150"/>](https://www.ibm.com/cloud-computing/bluemix/solutions) [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/dashdb-logo.png" height="150"/>](https://www.ibm.com/analytics/us/en/technology/cloud-data-services/dashdb/)
 
-## Create an account.
+[<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/jupyter.png" height="150"/>](http://jupyter.org/) [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/spark.png" height="150"/>](http://spark.apache.org/)
+
+[<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/RStudio2.png"/>](https://www.rstudio.com/) [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/shiny.png"/>](https://shiny.rstudio.com/)
+
+Use IBM’s Data Science Experience (DSX) and BlueMix cloud services to create a working cloud-based application from start to finish.  Participants will be led through a series of three labs that build upon one another.
+
+The first lab ([Lab-1](Lab-1)) will begin with loading raw delimited data into dashDB for Analytics and interacting with that data from a Jupyter notebook in DSX with python.
+
+The second lab ([Lab-2](Lab-2)) will leverage Spark machine learning (SparkML) on the loaded data to create categorical predictions using pyspark and a supervised learning model and store the results back to the database.
+
+The final lab ([Lab-3](Lab-3)) will guide participants in creating an R notebook and Shiny UI in DSX using RStudio.
+
+## Instructions:
+
+### Step 1. Get on IBM Data Science Experience (DSX).   We recommend using the Firefox browser.
+
+#### Create an account.
 
 1.  Go to [http://datascience.ibm.com/](http://datascience.ibm.com/)
 
@@ -38,7 +54,7 @@
 
 >  <img src="https://github.com/IBMDataScience/wow-lab-to-production/blob/master/images/landing.png?raw=true"/>
 
-# Step 2. Create a project
+### Step 2. Create a project
 
 1. Click on the left hand side "hamburger" icon and then click on My Projects to see a list of your projects. You should only see a default project.
 
