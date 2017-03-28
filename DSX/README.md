@@ -4,11 +4,11 @@
 
 Use IBM’s Data Science Experience (DSX) and BlueMix cloud services to create a working cloud-based application from start to finish.  Participants will be led through a series of three labs that build upon one another.
 
-The first lab ([Lab-1](https://github.com/Davin-IBM/Proof-of-Technology/tree/master/DSX/Lab-1)) will begin with loading raw delimited data into dashDB for Analytics and interacting with that data from a Jupyter notebook in DSX with python.
+The first lab ([Lab-1](Lab-1)) will begin with loading raw delimited data into dashDB for Analytics and interacting with that data from a Jupyter notebook in DSX with python.
 
-The second lab ([Lab-2](https://github.com/Davin-IBM/Proof-of-Technology/tree/master/DSX/Lab-2)) will leverage Spark machine learning (SparkML) on the loaded data to create categorical predictions using pyspark and a supervised learning model and store the results back to the database.
+The second lab ([Lab-2](Lab-2)) will leverage Spark machine learning (SparkML) on the loaded data to create categorical predictions using pyspark and a supervised learning model and store the results back to the database.
 
-The final lab ([Lab-3](https://github.com/Davin-IBM/Proof-of-Technology/tree/master/DSX/Lab-3)) will guide participants in creating an R notebook and Shiny UI in DSX using RStudio.
+The final lab ([Lab-3](Lab-3)) will guide participants in creating an R notebook and Shiny UI in DSX using RStudio.
 
 [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/DSX.png" height="150"/>](http://datascience.ibm.com/) [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/jupyter.png" height="150"/>](http://jupyter.org/index.html) [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/spark.png" height="150"/>](http://spark.apache.org/)
 
