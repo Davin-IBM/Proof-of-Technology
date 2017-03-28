@@ -1,6 +1,26 @@
 # Work with trafficking data and create a user interface in R using RStudio and Shiny
 
+## Introduction:
+
+In this lab, you will learn some of the fundamentals of using RStudio and Shiny in DSX to work and interact with data in dashDB and then to create a fully operational "reactive" web application that you can enhance further.
+
 [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/RStudio2.png"/>](https://www.rstudio.com/) [<img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/images/shiny.png"/>](https://shiny.rstudio.com/)
+
+## Objectives:
+
+Upon completing the lab, you will know how to:
+
+1. Create an RStudio project from a Git repository
+1. Establish a connection to dashDB using an ancillary file
+1. Query, join, explore and visualize data in an R notebook
+1. Derive categorical names from numerical levels in an R dataframe
+1. Use ggplot2 to create bar plots of several of the columns in an R dataframe
+1. Use a logorithmic scale when creating bar plots
+1. Close the database connection
+1. Leverage shiny to create and run a web application
+1. Interact with the shiny web web application by runnng it externally
+1. Vet additional records in dashDB using the web application
+1. Explore the changes made after vetting and re-running the predictions generated in Lab-2
 
 ## Instructions:
 
