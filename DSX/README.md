@@ -1,8 +1,8 @@
-# IBM Proof of concept - Data Science Experience
+# IBM Proof of Technology - Data Science Experience
 
 # Instructions:
 
-# Step 1. Get on IBM Data Science Experience (DSX).   We recommend using the Firefox brower.
+# Step 1. Get on IBM Data Science Experience (DSX).   We recommend using the Firefox browser.
 
 ## Create an account.
 
