@@ -72,3 +72,4 @@ __NOTE__: If you already have a DSX account, please skip to __Step 2__.
 
  >  <img src="https://github.com/IBMDataScience/wow-lab-to-production/blob/master/images/create-project.png?raw=true" width="512" height="499" />
 
+You are now ready to begin [Lab-1](Lab-1/).
