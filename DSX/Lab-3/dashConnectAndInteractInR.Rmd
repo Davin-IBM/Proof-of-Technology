@@ -19,7 +19,7 @@ if(length(new.packages)) install.packages(new.packages)
 lapply(list.of.packages, function(x){library(x, character.only = TRUE, warn.conflicts = FALSE, quietly = TRUE)})
 ```
 
-Establish a connection to dashDB.  You'll need to fill in details of your dashDB instance in the connection.R file (if you haven't done so already).
+Establish a connection to dashDB. You'll need to fill in details of your dashDB instance in the connection.R file (if you haven't done so already) the dashDB instance's hostname, user ID (uid) and password (pwd) as well as the name of the vetting table.
 
 ```{r}
 # Get connection details
@@ -45,11 +45,8 @@ idaInit(conn)
 idaShowTables()
 ```
 
-Find the desired table from the table emitted from the cell above and set the table.string variable to it.
-
 ```{r}
-# Locate the desired table and load it into a data frame
-vetting.table = 'DASH6815.FEMALE_TRAFFICKING'
+# Load the desired table into a data frame.  Note: vetting.table is assigned in connection.R.
 idadf = ida.data.frame(vetting.table)
 
 # Show the table dimensions
