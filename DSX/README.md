@@ -18,7 +18,9 @@ The final lab ([Lab-3](Lab-3)) will guide participants in creating an R notebook
 
 ## Instructions:
 
-### Step 1. Get on IBM Data Science Experience (DSX).   We recommend using the Firefox browser.
+### Step 1. Sign up for the IBM Data Science Experience (DSX).   We recommend using the Firefox browser.
+
+__NOTE__: If you already have a DSX account, please skip to __Step 2__.
 
 #### Create an account.
 
