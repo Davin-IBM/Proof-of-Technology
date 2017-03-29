@@ -9,9 +9,6 @@ In this lab, you will use SparkML in IBM Data Science Experience to run generate
 ## Objectives:
 Upon completing the lab, you will know how to:
 
-Connect to the database and read in the data
-
-
 
 1. Connect to a database and read data used for machine learning.
 2. Identify labels and transform data.
