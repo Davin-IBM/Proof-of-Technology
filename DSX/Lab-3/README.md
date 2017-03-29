@@ -68,8 +68,10 @@ Consider this notebook your *data playground*.  This is the place where you can 
 ## Step 12.  In the running app, click on some of the rows in the table and vet some of the records.
 > <img src="https://raw.githubusercontent.com/Davin-IBM/Proof-of-Technology/master/DSX/Lab-3/images/RStudio-lab3-vet-records.png"/>
 
-Notice how your app reacts to the user.  Try out the search in the upper right corner.  Try the filters above the various columns.  Click on the items in the pie graph legend as well as the various wedges in the pie.   Click on some of the rows in the table and save your vettings.  As the vettings are saved, they are persisted back to dashDB (you can verify this yourself by queying your dash instance).  Now, go back to your Lab-2 notebook and re-run the ML predictions and see the changes reflected there, in dashDB and in the UI (you'll need to restart your shiny app to pick up the changes).
+## Step 13.  Interact with your app and consider ways it can be improved.
 
-### Step 13.  [Get Inspired!](https://shiny.rstudio.com/gallery/)
+Notice how your app reacts as you interact with it.  Try out the search in the upper right corner.  Try the filters above the various columns.  Click on the items in the pie graph legend as well as the various wedges in the pie.   Click on some of the rows in the table and save your vettings.  As the vettings are saved, they are persisted back to dashDB (you can verify this yourself by queying your dash instance).  Now, go back to your Lab-2 notebook and re-run the ML predictions and see the changes reflected there, in dashDB and in the UI (you'll need to restart your shiny app to pick up the changes).
+
+### Step 14.  [Get Inspired!](https://shiny.rstudio.com/gallery/)
 
 You now have an end-to-end skeleton application that uses vetting data, dashDB, Spark and DSX that you can now flesh out into something truly useful in a short amount of time without having to write a lot of code.
