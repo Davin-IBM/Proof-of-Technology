@@ -68,7 +68,7 @@ Join the vetting table with the vetting predictions table.
 predicted = as.data.frame(
   idaQuery(
     'SELECT * FROM ', vetting.table, ' LEFT JOIN ', vetting.table, '_ML_RESULTS USING (UUID)',
-    ' ORDER BY VETTING_LEVEL, NAME'
+    ' ORDER BY VETTING_LEVEL, ALT_NAME'
   )
 )
 
@@ -102,7 +102,7 @@ predicted$PREDICTED_VETTING <- plyr::revalue(
 )
 
 # Show a few columns of the first few records
-head(predicted[c('NAME', 'AGE', 'COUNTRIES_VISITED', 'BIRTH_COUNTRY', 'VETTING', 'PREDICTED_VETTING')])
+head(predicted[c('ALT_NAME', 'AGE', 'COUNTRIES_VISITED', 'BIRTH_COUNTRY', 'VETTING', 'PREDICTED_VETTING')])
 ```
 
 Graph the vetting and predicted vetting categories.
