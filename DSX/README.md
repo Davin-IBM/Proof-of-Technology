@@ -10,11 +10,11 @@
 
 Use IBM’s Data Science Experience (DSX) and BlueMix cloud services to create a working cloud-based application from start to finish.  Participants will be led through a series of three labs that build upon one another.
 
-The first lab ([Lab-1](Lab-1)) will begin with loading raw delimited data into dashDB for Analytics and interacting with that data from a Jupyter notebook in DSX with python.
+1. [Lab-1](Lab-1) - The first lab will begin with loading raw delimited data into dashDB for Analytics and interacting with that data from a Jupyter notebook in DSX with python.
 
-The second lab ([Lab-2](Lab-2)) will leverage Spark machine learning (SparkML) on the loaded data to create categorical predictions using pyspark and a supervised learning model and store the results back to the database.
+1. [Lab-2](Lab-2) - The second lab will leverage Spark machine learning (SparkML) on the loaded data to create categorical predictions using pyspark and a supervised learning model and store the results back to the database.
 
-The final lab ([Lab-3](Lab-3)) will guide participants in creating an R notebook and Shiny UI in DSX using RStudio.
+1. [Lab-3](Lab-3) - The final lab will guide participants in creating an R notebook and Shiny UI in DSX using RStudio.
 
 ## Instructions:
 
