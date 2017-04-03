@@ -99,7 +99,7 @@ shinyApp(
       data = idaQuery(
         paste0(
           'SELECT * FROM ', vetting.table, ' LEFT JOIN ', vetting.table, '_ML_RESULTS USING (UUID)',
-          ' ORDER BY VETTING_LEVEL, NAME'
+          ' ORDER BY VETTING_LEVEL, ALT_NAME'
         )
       ),
       data.selected = NULL
