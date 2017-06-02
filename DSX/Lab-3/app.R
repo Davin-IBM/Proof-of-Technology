@@ -1,7 +1,7 @@
 # app.R
 
 # Detect and install missing packages before loading them
-list.of.packages <- c('ibmdbR', 'shiny', 'plyr', 'DT', 'plotly')
+list.of.packages <- c('ibmdbR', 'shiny', 'shinythemes', 'plyr', 'DT', 'plotly')
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,'Package'])]
 if(length(new.packages)) install.packages(new.packages)
 lapply(list.of.packages, function(x){library(x, character.only = TRUE, warn.conflicts = FALSE, quietly = TRUE)})
@@ -30,13 +30,15 @@ category.as.string <- function(catnum) {
 }
 
 shinyApp(
-  
   ################################################################################
   # UI                                                                           #
   ################################################################################
   ui = fluidPage(
+    #shinythemes::themeSelector(),
+    tags$head(tags$style('body {background-color: #FFFFEF; }')),
+    theme = shinythemes::shinytheme('yeti'),
     # Application title
-    titlePanel('IBM PoT - Human Trafficking'),
+    titlePanel('Human Trafficking'),
     sidebarLayout(
       sidebarPanel(
         width = 3,
@@ -54,7 +56,8 @@ shinyApp(
               )
             )
           ),
-          actionButton('saveVetting', label = 'Save', icon = icon('save', lib = 'glyphicon'))
+          actionButton('saveVetting', label = 'Save', icon = icon('save', lib = 'glyphicon')),
+          actionButton('entityProfile', label='Entity Profile', icon=icon('id-card-o'))
         )
       ),
       mainPanel(
@@ -96,13 +99,15 @@ shinyApp(
     
     # Server-side observable values
     v <- reactiveValues(
-      data = idaQuery(
-        paste0(
-          'SELECT * FROM ', vetting.table, ' LEFT JOIN ', vetting.table, '_ML_RESULTS USING (UUID)',
-          ' ORDER BY VETTING_LEVEL, ALT_NAME'
+      data = {
+         df <- idaQuery(
+            paste0(
+            'SELECT * FROM ', vetting.table, ' T1 LEFT JOIN ', vetting.table, '_ML_RESULTS T2 USING (UUID)',
+            ' ORDER BY VETTING_LEVEL, NAME'
+          )
         )
-      ),
-      data.selected = NULL
+        df
+      }, data.selected = NULL
     )
     
     # When rows are selected, update the data.selected reactive value
@@ -119,11 +124,50 @@ shinyApp(
         '\nGender: ', {switch(toupper(df$GENDER[[selected]]), F = 'Female', M = 'Male', 'Unknown')},
         '\nAge: ', df$AGE[[selected]],
         '\nBirth Country: ', df$BIRTH_COUNTRY[[selected]],
+        '\nPassport Country: ', df$PASSPORT_COUNTRY[[selected]],
         '\nOccupation: ', df$OCCUPATION[[selected]],
-        '\nCountries Visited: ', df$COUNTRIES_VISITED[[selected]],
+        '\nCountries Visited: ', df$COUNTRIES_VISITED_COUNT[[selected]], ' (', df$COUNTRIES_VISITED[[selected]], ')',
         '\nCurrent Vetting: ', category.as.string(df$VETTING_LEVEL[[selected]]),
         '\nVetting Prediction: ', category.as.string(df$predCategory[[selected]])
       )
+    })
+    
+    profileModal <- function(df, selected) {
+      showModal(
+        modalDialog(
+          title=paste0('Profile for ', df$NAME[[selected]]),
+          size='l',
+          easyClose=TRUE,
+          fluidRow(
+            column(
+              width=4,
+              shiny::img(
+                src=ifelse(df$GENDER[[selected]] == 'F', 'avatar_female.jpg', 'avatar_male.jpg'),height=240, width=240
+              )
+            ),
+            column(
+              width=8,
+              HTML({
+                result <- '<h4>'
+                result <- paste0(result, 'Address: ', df$ADDRESS[[selected]], br())
+                result <- paste0(result, 'National ID: ', df$SSN[[selected]], br())
+                result <- paste0(result, 'Occupation: ', df$OCCUPATION[[selected]], br())
+                result <- paste0(result, 'Birth Date: ', df$BIRTH_DATE[[selected]], ' (', df$AGE[[selected]], ')', br())
+                paste0(result, '</h4>')
+              })
+            )
+          )
+        )
+      )
+    }
+    
+    observeEvent(input$entityProfile, {
+      isolate({
+        df <- v$data
+        selected <- v$data.selected
+        shiny::validate(need(!is.null(df) && !is.null(selected), 'Nothing selected.'))
+        profileModal(df, selected)
+      })
     })
     
     # When the data changes, update the vetting pie graph
@@ -170,7 +214,7 @@ shinyApp(
             marker = list(colors = colors, line = list(color = '#FFFFFF', width = 1))
           ) %>% plotly::config(displaylogo = FALSE, collaborate = FALSE) %>%
             layout(
-              legend = list(orientation = 'h'),
+              showlegend = TRUE, legend = list(orientation = 'h'),
               xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
               yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
         })
@@ -194,7 +238,7 @@ shinyApp(
         shiny::validate(need(is.data.frame(v$data) && nrow(v$data) > 0, 'No results.'))
         v$data
       }, 
-      server = TRUE,
+      server = FALSE,
       class = 'cell-border stripe',
       filter = 'top',
       colnames = c('ROW_ID'=1),
@@ -202,7 +246,10 @@ shinyApp(
       selection = 'single',
       options = list(
         dom = 'Bfrtip',
-        buttons = list(list(extend = 'colvis')),
+        buttons=list(
+          list(extend='colvis'),
+          'copy', 'csv', 'excel', 'pdf', 'print'
+        ),
         scrollX = TRUE,
         scrollY = 600,
         scroller = TRUE,
@@ -211,6 +258,4 @@ shinyApp(
       )
     )
   }
-
 )
-
